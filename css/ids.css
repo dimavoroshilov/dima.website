@@ -286,7 +286,7 @@
       background-color: inherit;
 
       & th {
-        position: sticky;
+     /* position: sticky; */
         top: 0px;
         text-align: left;
         border-bottom: 2px solid rgba(var(--ids__text-RGB), 1);
