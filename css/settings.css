@@ -36,10 +36,10 @@ html {
   /* Font-size calculation using variables */
 
   --mobile-font-size-min: 20;
-  --mobile-font-size-max: 20;
+  --mobile-font-size-max: 18;
 
-  --desktop-font-size-min: 20;
-  --desktop-font-size-max: 22;
+  --desktop-font-size-min: 18;
+  --desktop-font-size-max: 20;
 
   --mobile-viewport-min: 320;
   --mobile-desktop-breakpoint: 768;
@@ -84,3 +84,10 @@ html {
   }
 }
 
+/* Адаптивность таблицы */
+@media (max-width: 768px) {
+  /* Скрываем 4 колонку на мобильных */
+  table th:nth-child(4),
+  table td:nth-child(4) {
+    display: none;
+  }
